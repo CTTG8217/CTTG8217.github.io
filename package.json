@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "deploy": "npm cache clean --force && next build && next export && touch out/.nojekyll",
+    "deploy": "npm cache clean --force && next build && next export && touch out/.nojekyll && git subtree push --prefix out github master",
     "start": "next start",
     "lint": "next lint"
   },
